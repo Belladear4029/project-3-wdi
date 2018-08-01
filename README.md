@@ -2,18 +2,18 @@
 ## A MEAN Stack App
 ###### by Bella Dear, Bianca Jemsten and James Newell
 
-The goal of project 3 was to build a full MEAN stack app in a team. We chose to build an app that allows the user to search for an event they're going to by using [Skiddle's Event API](https://github.com/Skiddle/web-api/wiki/Events-API), and by fetching the coordinates of the event we generated a list of restaurants and bars using [Google Places API](https://developers.google.com/places/web-service/intro). The user can then add other users to the event and calculate the travel time from their current position using the [City Mapper API](https://citymapper.com/api).
+The goal of project 3 was to build a full MEAN stack app in a team. We chose to build an app that allows the user to search for an event they're going to by using [Skiddle's Event API](https://github.com/Skiddle/web-api/wiki/Events-API), and by fetching the coordinates of the event we generated a list of restaurants and bars, within a chosen radius, using [Google Places API](https://developers.google.com/places/web-service/intro). The user can then add other users to the event and calculate the travel time from their current position using the [City Mapper API](https://citymapper.com/api).
 
 Technologies used in the project were Angular, JavaScript, SCSS, HTML, Node.js, MongoDB, Express.js and Webpack.
 
-Our app is deployed on [Heroku](https://fast-plains-52637.herokuapp.com/#!/).
+Our app is deployed on [Heroku](https://evening-angel.herokuapp.com/).
 
 
 <p align="center"><img src="https://i.imgur.com/achGguo.gif" width="700"></p>
 
 ***
 
-#### The planning process
+#### The Planning Process
 ###### Wireframes
 <p align="center"><img src="https://i.imgur.com/4FNokmo.png" width="700"></p>
 
@@ -35,8 +35,9 @@ We had a page that would display a bundle and depending on whether the current u
 
 On the same page we added a few more features including a travel time calculator, google maps and an attendee adder.
 
-The user is able to search for their current location, using Google Autocomplete. They then decide whether they would like to go to the bar or restaurant first. Clicking the 'Get Travel Time' button then calculates the driving time from their entered location to either the bar's or restaurant's location depending which is selected. If a bundle consists of only one, a restaurant or a bar. The location will automatically be chosen and the radio buttons will not show.
+<p align="center"><img src="https://imgur.com/GJCXDFB.gif" width="700"></p>
 
+The user is able to search for their current location, using Google Autocomplete. They then decide whether they would like to go to the bar or restaurant first. Clicking the 'Get Travel Time' button then calculates the driving time from their entered location to either the bar's or restaurant's location depending which is selected. If a bundle consists of only one, a restaurant or a bar. The location will automatically be chosen and the radio buttons will not show.
 
 ###### Creating a new bundle
 
@@ -83,7 +84,7 @@ $scope.findBars = function(){
 ```
 
 **Done**
-The initial search bar has now been replaces with a submit button which the user can click when they are happy with their bundle. It sends a POST request with all the data of the bundle and redirects of the show page of that bundle. 
+The initial search bar has now been replaces with a submit button which the user can click when they are happy with their bundle. It sends a POST request with all the data of the bundle and redirects of the show page of that bundle.
 
 
 #### Challenges
