@@ -35,11 +35,12 @@ We had a page that would display a bundle and depending on whether the current u
 
 On the same page we added a few more features including a travel time calculator, google maps and an attendee adder.
 
-The user is able to search for their current location, using Google Autocomplete. They then decide whether they would like to go to the bar or restaurant first. Clicking the 'Get Travel Time' button then calculates the driving time from their entered location to either the bar's or restaurant's location depending which is selected. If a bundle only consists of either a restaurant or a bar. The location will automatically be chosen and the radio buttons will not show.
+The user is able to search for their current location, using Google Autocomplete. They then decide whether they would like to go to the bar or restaurant first. Clicking the 'Get Travel Time' button then calculates the driving time from their entered location to either the bar's or restaurant's location depending which is selected. If a bundle consists of only one, a restaurant or a bar. The location will automatically be chosen and the radio buttons will not show.
 
 
 #### Challenges
 - Bundle New page needs loading time
+- City mapper API was very limited and only returned the travel time for driving
 
 #### On the to-do list
 - Mobile responsiveness
