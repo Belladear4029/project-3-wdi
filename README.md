@@ -1,5 +1,5 @@
-# WDI 34 Project 3
-## A MEAN Stack App
+# ![image](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) WDI 34 Project 3
+## Evening Angel
 ###### by Bella Dear, Bianca Jemsten and James Newell
 
 The goal of project 3 was to build a full MEAN stack app in a team. We chose to build an app that allows the user to search for an event they're going to by using [Skiddle's Event API](https://github.com/Skiddle/web-api/wiki/Events-API), and by fetching the coordinates of the event we generated a list of restaurants and bars, within a chosen radius, using [Google Places API](https://developers.google.com/places/web-service/intro). The user can then add other users to the event and calculate the travel time from their current position using the [City Mapper API](https://citymapper.com/api).
@@ -88,7 +88,39 @@ The initial search bar has now been replaces with a submit button which the user
 
 
 #### Challenges
-- Bundle New page needs loading time
+**Bundle New page needs loading time**
+
+One of the main challenges we faced when making this app was a race condition issue on our Bundle New page. Owing to the process of retrieving our data from Skiddle's API and then displaying it on the page we found that the returned results would come back staggered uncontrollably.
+
+#### On the to-do list
+**Mobile responsiveness**
+
+The application would be perfect for anyone to use on the go especially with our use of Citymapper API with it's travel time calculator. So this is a high priority for us to add to the functionality across the whole app.
+
+**Bundle Edit page**
+
+This is the current view of the Bundle Show, notice how we have a delete bundle button but no edit bundle just yet.
+
+<p align="center"><img src="https://imgur.com/KWL0Flr.jpg" width="700"></p>
+
+Given the complexities of retrieving the correct information and then having to repopulate the choices onto the page we initially knew that an edit page would prove problematic. The user experience is key to us and our app so adding a Bundle Edit page is something we are looking into doing.
+
+
+**Use directives to clean up the code**
+
+In AngularJS you are very fortunate to have directives, hardcoded markers which allow you to change how a DOM element behaves. Throughout our project we used these to help reduce the amount of code we were writing. I have placed an example below of where we used directives.
+
+```
+<div class="columns is-multiline" ng-class="{ 'hide': hideEvents }">
+    <div class="column is-3-desktop is-4-tablet" ng-repeat="event in events | filter: search">
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+```
+
+So as you can see above we used multiple types of directives to help reduce the amount of code we had written but we still need to go further. We want to be able to go away from this project and come back to readable code that isn't a thousand lines longer than it needs to be. So this to do item is more about the developers than the users.  
+
+
 - City mapper API was very limited and only returned the travel time for driving
 
 #### On the to-do list
