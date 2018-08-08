@@ -14,19 +14,19 @@ Our app is deployed on [Heroku](https://evening-angel.herokuapp.com/).
 ***
 
 ### The Planning Process
-##### Wireframes
+#### Wireframes
 <p align="center"><img src="https://i.imgur.com/4FNokmo.png" width="700"></p>
 
 We used [Draw.io](https://www.draw.io/) to plan out the interface of our app. It helped us to envision how the user flow would be as well as to make sure all members of our team were on the same level as to how certain features would look and work.
 
-##### Task planning
+#### Task planning
 <p align="center"><img src="https://i.imgur.com/SjEDjRD.png" width="700"></p>
 
 Before the project started we planned out every task that had to be done and put them into [Trello Cards](https://trello.com/biancajemsten/boards). We used the color labels to indicate if it was a fontend or backend task(blue vs. red) and if it was a task crucial for MVP or an add-on (green vs. yellow). Initially everything was in the backlog. Then as we started building the app we moved cards to the other categories which were Doing (frontend), Doing (backend), To do, Bugs, and Done.
 
 ### The App
 
-##### Displaying a Bundle
+#### Displaying a Bundle
 <p align="center"><img src="https://imgur.com/m0bFpCD.png" width="700"></p>
 
 We had a page that would display a bundle and depending on whether the current user had created this bundle, certain elements were visible. As seen in the image, the chosen event, restaurant and bar are shown with information about each one. The delete button was only visible if the current user was the creator.
@@ -39,7 +39,7 @@ On the same page we added a few more features including a travel time calculator
 
 The user is able to search for their current location, using Google Autocomplete. They then decide whether they would like to go to the bar or restaurant first. Clicking the 'Get Travel Time' button then calculates the driving time from their entered location to either the bar's or restaurant's location depending which is selected. If a bundle consists of only one, a restaurant or a bar. The location will automatically be chosen and the radio buttons will not show.
 
-##### Creating a New Bundle
+#### Creating a New Bundle
 
 <p align="center"><img src="https://i.imgur.com/n1SoVo2.gif" width="700"></p>
 
@@ -83,23 +83,23 @@ $scope.findBars = function(){
 
 ### Challenges
 
-##### Creating a Bundle
+#### Creating a Bundle
 One of the main challenges we faced when making this app was a racing issue when creating a new bundle. The process of retrieving data from the Skiddle API and Google Places API, depending on selected parameters, takes some time which meant the results would sometimes be displayed staggered or wouldn't be displayed at all.
 
-##### Citymapper API
+#### Citymapper API
 The Citymapper API is very limited and only returns the travel time for driving. We would have liked to provide the travel time for more modes of transport and also potentially directions. Learning from this, if we were to do this again we would try to use Google Direction API as this may give more data that we can work with and ultimately give the user a better experience.
 
 ### Future Additions
 
-##### Mobile Responsiveness
+#### Mobile Responsiveness
 The application would be perfect for anyone to use on the go especially with our use of Citymapper API with it's travel time calculator. So this is a high priority for us to add to the functionality across the whole app.
 
-##### Editing Bundles
+#### Editing Bundles
 Currently you are unable to edit a bundle you have created, you would have to delete it and start again. If we had more time we would have loved to add a feature to enable users to edit an existing bundle.
 
 Given the complexities of retrieving the correct information and then having to repopulate the choices onto the page, we initially knew that a bundle edit function would prove problematic. However the user experience is key to us and our app so being able to edit a bundle is something we would have definitely liked to have added given we had more time.
 
-##### Directives
+#### Directives
 When using cards as directives, they are very helpful to keep the code concise and tidy. We briefly attempted, in the limited time we had left, a 'bundle card' and an 'event card' for the user show page and bundle new page respectively. We had some issues with these as there were buttons within the cards that lost their function when the card directives were used. We couldn't quite figure out how to give each button within each card the correct function according to the specific card that is 'clicked'.
 
 It is always important to keep your code concise and easy to read, especially for other developers as this is good practice for future projects. Therefore this addition is more for the developers rather than the users as it should not change the app itself.
