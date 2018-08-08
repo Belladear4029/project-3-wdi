@@ -89,7 +89,7 @@ One of the main challenges we faced when making this app was a racing issue when
 #### Citymapper API
 The Citymapper API is very limited and only returns the travel time for driving. We would have liked to provide the travel time for more modes of transport and also potentially directions. Learning from this, if we were to do this again we would try to use Google Direction API as this may give more data that we can work with and ultimately give the user a better experience.
 
-### Future Additions
+### Further Additions
 
 #### Mobile Responsiveness
 The application would be perfect for anyone to use on the go especially with our use of Citymapper API with it's travel time calculator. So this is a high priority for us to add to the functionality across the whole app.
